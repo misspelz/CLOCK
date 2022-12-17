@@ -4,8 +4,9 @@ const secondA = document.querySelector(".second")
 
 function updateClock(){
     const currentDate = new Date()
-    setTimeout(updateClock, 1000)
-
+    setInterval(updateClock, 1000)
+    // console.log(currentDate)
+    clearInterval()
     const hour = currentDate.getHours()
     const minute = currentDate.getMinutes()
     const second = currentDate.getSeconds()
